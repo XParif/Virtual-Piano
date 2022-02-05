@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Piano</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .container {
+        width: 60%;
+        height: 500px;
+        margin: 20px auto;
+        border: 2px solid red;
+      }
+
+      .black-group {
+        position: relative;
+        display: flex;
+        z-index: 1;
+        top: 150px;
+      }
+
+      .black-key {
+        margin-left: 39px;
+        width: 25px;
+        height: 150px;
+        background-color: black;
+        border: 1px solid white;
+      }
+
+      .black-key:active {
+        background-color: rgb(83, 83, 83);
+      }
+
+      .white-group {
+        display: flex;
+      }
+
+      .white-key {
+        width: 99px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 0px 0px 15px 15px;
+        box-shadow: 1px 1px 3px 1px;
+      }
+
+      .white-key:active {
+        background-color: #ddd;
+        box-shadow: inset 1px 1px 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="black-group"></div>
+      <div class="black-group">
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+        <div class="black-key"></div>
+      </div>
+      <div class="white-group">
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+        <div class="white-key"></div>
+      </div>
+    </div>
+  </body>
+</html>
